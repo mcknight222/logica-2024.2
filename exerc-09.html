@@ -1,0 +1,18 @@
+<script>
+    //9) As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o valor total da compra. 
+
+    const numeroMaca = prompt('Número de maças: ')
+    resposta = ''
+
+
+    let calculo1 = (0,30 * numeroMaca)
+    let calculo2 = (0,25 * numeroMaca)
+
+    if(numeroMaca < 6){
+        resposta = calculo1
+    }else if(numeroMaca >= 12){
+        resposta = calculo2
+    }
+
+    document.write(resposta)
+</script>
